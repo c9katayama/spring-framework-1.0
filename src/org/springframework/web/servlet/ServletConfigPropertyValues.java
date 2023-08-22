@@ -53,9 +53,9 @@ class ServletConfigPropertyValues extends MutablePropertyValues {
 	public ServletConfigPropertyValues(ServletConfig config, String[] requiredProperties) throws ServletException {
 		List missingProps = (requiredProperties != null) ? Arrays.asList(requiredProperties) : null;
 
-		Enumeration enum = config.getInitParameterNames();
-		while (enum.hasMoreElements()) {
-			String property = (String) enum.nextElement();
+		Enumeration e = config.getInitParameterNames();
+		while (e.hasMoreElements()) {
+			String property = (String) e.nextElement();
 			Object value = config.getInitParameter(property);
 			addPropertyValue(new PropertyValue(property, value));
 			if (missingProps != null) {
