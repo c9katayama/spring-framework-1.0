@@ -15,6 +15,15 @@ java {
 dependencies {
     implementation fileTree(dir: 'lib', include: ['**/*.jar'], exclude: ['**/jaxrpc.jar', '**/jdbc2_0-stdext.jar', '**/xml-apis.jar'])
 }
-
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+        resources {
+            srcDirs = ['src']
+        }
+    }
+}
 compileJava.options.encoding = 'UTF-8'
 compileTestJava.options.encoding = 'UTF-8'
