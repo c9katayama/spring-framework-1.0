@@ -17,3 +17,5 @@ out/*
 /bin/
 /.classpath
 /.project
+/.gradle/
+/.settings/

@@ -1,0 +1,20 @@
+plugins {
+    id 'eclipse'
+	id 'idea'
+	id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+java {
+	sourceCompatibility = '11'
+}
+
+dependencies {
+    implementation fileTree(dir: 'lib', include: ['**/*.jar'], exclude: ['**/jaxrpc.jar', '**/jdbc2_0-stdext.jar', '**/xml-apis.jar'])
+}
+
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
