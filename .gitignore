@@ -14,3 +14,6 @@ mvnw.cmd
 
 */target/
 out/*
+/bin/
+/.classpath
+/.project
