@@ -1,3 +1,14 @@
+This repository is for learning Spring Framework 1.0.
+If you have a Java 11 environment, you can use gradle to build an Eclipse/IDEA environment.
+For Eclipse, run below to import the project.
+
+```
+ ./gradlew eclipse
+```
+
+
+Below is Spring's original README.
+
 THE SPRING FRAMEWORK, release 1.0 (March 2004)
 ----------------------------------------------
 http://www.springframework.org
